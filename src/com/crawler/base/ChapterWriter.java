@@ -22,6 +22,7 @@ public class ChapterWriter implements Closeable {
     public void write(Chapter chapter) throws IOException {
         writer.write(chapter.title());
         writer.newLine();
+        writer.newLine();
         writer.write(chapter.content());
         writer.newLine();
         writer.newLine();
